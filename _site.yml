@@ -1,0 +1,51 @@
+name: "mcnakhaee"
+title: "Muhammad Nakhaee"
+description: |
+  Muhammad Nakhaee's personal website
+output_dir: "_site"
+theme: theme.css
+favicon: images/favicon.png
+base_url: https://mcnakhaee.com/
+repository_url: https://github.com/mcnakhaee
+creative_commons: CC BY-SA
+google_analytics: ""
+twitter:
+  site: "@m_cnakhaee"
+  creator: "@m_cnakhaee"
+navbar:
+  search: true
+  logo:
+    image: images/logo.png
+    href: index.html
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Posts"
+      href: posts.html
+    - text: "Talks"
+      href: talks.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Photography"
+      href: gallery.html
+    - icon: fab fa-github
+      href: https://github.com/mcnakhaee
+    - icon: fab fa-twitter
+      href: https://twitter.com/m_cnakhaees
+    - icon: fas fa-home
+      href: index.html
+collections:
+  posts:
+    categories: true
+    categories_metadata: true
+    authors_metadata: false
+    feed_iems_max: 20 # default
+  talks:
+    categories: true
+    categories_metadata: true
+    authors_metadata: false
+    feed_iems_max: 20 # default
+output:
+  distill::distill_article

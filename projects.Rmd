@@ -1,0 +1,24 @@
+---
+title: "Projects"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r metathis, message=FALSE, warning=FALSE, include=FALSE}
+library(metathis)
+
+
+```
+
+
+```{r, include=FALSE}
+
+```
+
+```{r}
+
+```
+
