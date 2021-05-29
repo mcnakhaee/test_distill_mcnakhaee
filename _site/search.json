@@ -6,14 +6,14 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\nI’m Muhammad\r\nI was a PhD student at the University of Twente for less than 2 years. Now, I work as a data analyst/scientist at Exact in the Netherlands.\r\nMy website is built using the {distill} package. Before that I used Hugo and the blogdown package for my website.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-29T16:40:28+02:00"
+      "last_modified": "2021-05-29T16:59:52+02:00"
     },
     {
       "path": "gallery.html",
       "title": "Gallery",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n#lightgallery > a > img:hover {\r\n   transform: scale(1.15, 1.15);\r\n   transition: 0.4s ease-in-out;\r\n   cursor: pointer;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    lightGallery(document.getElementById('lightgallery'));\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-29T16:40:30+02:00"
+      "last_modified": "2021-05-29T16:59:54+02:00"
     },
     {
       "path": "index.html",
@@ -21,28 +21,28 @@
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-29T16:40:31+02:00"
+      "last_modified": "2021-05-29T16:59:55+02:00"
     },
     {
       "path": "posts.html",
       "title": "Posts",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-29T16:40:32+02:00"
+      "last_modified": "2021-05-29T16:59:56+02:00"
     },
     {
       "path": "projects.html",
       "title": "Projects",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-29T16:40:33+02:00"
+      "last_modified": "2021-05-29T16:59:57+02:00"
     },
     {
       "path": "talks.html",
       "title": "Talks",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-29T16:40:34+02:00"
+      "last_modified": "2021-05-29T16:59:59+02:00"
     }
   ],
   "collections": ["posts/posts.json", "talks/talks.json"]

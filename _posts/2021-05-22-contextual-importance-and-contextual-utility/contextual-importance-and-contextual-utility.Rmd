@@ -7,8 +7,10 @@ author:
     url: {}
 date: 05-22-2021
 output:
-  distill::distill_article:
-    self_contained: false
+    distill::distill_article:
+      highlight: ek_syntax_highlighting.theme
+      self_contained: false
+      toc: true
 ---
 
 
