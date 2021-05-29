@@ -6,6 +6,9 @@ author:
   - name: Unknown
     url: {}
 date: 05-22-2021
+twitter:
+  site: "@ellamkaye"
+  creator: "@ellamkaye"
 output:
     distill::distill_article:
       highlight: ek_syntax_highlighting.theme

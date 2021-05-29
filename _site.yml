@@ -24,8 +24,6 @@ navbar:
       href: about.html
     - text: "Posts"
       href: posts.html
-    - text: "Talks"
-      href: talks.html
     - text: "Projects"
       href: projects.html
     - text: "Photography"
@@ -33,9 +31,11 @@ navbar:
     - icon: fab fa-github
       href: https://github.com/mcnakhaee
     - icon: fab fa-twitter
-      href: https://twitter.com/m_cnakhaees
-    - icon: fas fa-home
-      href: index.html
+      href: https://twitter.com/m_cnakhaee
+    - icon: fab fa-linkedin
+      href: https://linkedin.com/m_cnakhaee
+    - icon: fab fa-instagram
+      href: https://instagram.com/m_cnakhaee
 collections:
   posts:
     categories: true
