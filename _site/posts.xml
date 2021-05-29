@@ -32,14 +32,6 @@
       <media:content url="https://mcnakhaee.com/posts/2021-05-22-covid-in-nl/featured.JPG" medium="image" type="image/jpeg"/>
     </item>
     <item>
-      <title>First Post</title>
-      <dc:creator>Unknown</dc:creator>
-      <link>https://mcnakhaee.com/posts/2021-05-22-first-post</link>
-      <description>A short description of the post.</description>
-      <guid>https://mcnakhaee.com/posts/2021-05-22-first-post</guid>
-      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>How Easy Is It to Understand What Donald Trump Says?</title>
       <dc:creator>Unknown</dc:creator>
       <link>https://mcnakhaee.com/posts/2021-05-22-how-easy-is-it-to-understand-what-donald-trump-says</link>
@@ -54,8 +46,17 @@
       <link>https://mcnakhaee.com/posts/2020-10-15-which-presidential-debate-was-more-chaotic</link>
       <description>A short description of the post.</description>
       <guid>https://mcnakhaee.com/posts/2020-10-15-which-presidential-debate-was-more-chaotic</guid>
-      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
       <media:content url="https://mcnakhaee.com/posts/2020-10-15-which-presidential-debate-was-more-chaotic/which-presidential-debate-was-more-chaotic_files/figure-html5/unnamed-chunk-4-1.png" medium="image" type="image/png" width="3840" height="1344"/>
+    </item>
+    <item>
+      <title>The Happiest, Saddest, Most Energetic and Most Popular Persian Singers on Spotify</title>
+      <dc:creator>Unknown</dc:creator>
+      <link>https://mcnakhaee.com/posts/2020-05-04-persiansongs</link>
+      <description>A short description of the post.</description>
+      <guid>https://mcnakhaee.com/posts/2020-05-04-persiansongs</guid>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://mcnakhaee.com/posts/2020-05-04-persiansongs/persiansongs_files/figure-html5/unnamed-chunk-8-1.png" medium="image" type="image/png" width="3840" height="5760"/>
     </item>
   </channel>
 </rss>
