@@ -6,35 +6,35 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\nI’m Muhammad\r\nI was a PhD student at the University of Twente for less than 2 years. Now, I work as a data analyst/scientist at Exact in the Netherlands.\r\nMy website is built using the {distill} package. Before that I used Hugo and the blogdown package for my website.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-30T00:07:20+02:00"
+      "last_modified": "2021-05-30T13:30:24+02:00"
     },
     {
       "path": "gallery.html",
       "title": "Gallery",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n#lightgallery > a > img:hover {\r\n   transform: scale(1.15, 1.15);\r\n   transition: 0.4s ease-in-out;\r\n   cursor: pointer;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    lightGallery(document.getElementById('lightgallery'));\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-30T00:07:22+02:00"
+      "last_modified": "2021-05-30T13:30:25+02:00"
     },
     {
       "path": "index.html",
       "title": "Muhammad Nakhaee",
       "author": [],
       "contents": "\r\n\r\n          \r\n          \r\n          \r\n          \r\n          Muhammad Nakhaee\r\n          \r\n          \r\n          Home\r\n          About\r\n          Posts\r\n          Projects\r\n          Photography\r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            \r\n              \r\n            \r\n              Muhammad Nakhaee\r\n            \r\n            \r\n              \r\n                \r\n                    \r\n                      \r\n                        Twitter\r\n                      \r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      \r\n                        GitHub\r\n                      \r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      \r\n                        LinkedIn\r\n                      \r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      \r\n                        Email\r\n                      \r\n                    \r\n                  \r\n                                  \r\n            \r\n          \r\n        \r\n        \r\n        \r\n          \r\n            \r\n            Hey There!\r\n            Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects on my Projects tab.\r\n            Let’s collaborate!\r\n            Do you want to use one of my computational art pieces? Interested in having me talk at your organization or group? Do you have an idea that doesn’t fit the previous questions? Email me!\r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n      \r\n        \r\n          \r\n            \r\n              \r\n            \r\n              Muhammad Nakhaee\r\n            \r\n            \r\n              \r\n                \r\n                                    \r\n                    \r\n                      Twitter\r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      GitHub\r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      LinkedIn\r\n                    \r\n                  \r\n                                    \r\n                    \r\n                      Email\r\n                    \r\n                  \r\n                                  \r\n              \r\n            \r\n            \r\n              \r\n              Hey There!\r\n              Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects on my Projects tab.\r\n              Let’s collaborate!\r\n              Do you want to use one of my computational art pieces? Interested in having me talk at your organization or group? Do you have an idea that doesn’t fit the previous questions? Email me!\r\n              \r\n            \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
-      "last_modified": "2021-05-30T00:07:22+02:00"
+      "last_modified": "2021-05-30T13:30:25+02:00"
     },
     {
       "path": "posts.html",
       "title": "Posts",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-30T00:07:23+02:00"
+      "last_modified": "2021-05-30T13:30:26+02:00"
     },
     {
       "path": "projects.html",
       "title": "Projects",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n\r\nTidyTuesday\r\n\r\n\r\nMy Submissions for the weekly TidyTuesday Project created using R and ggplot()\r\n\r\n\r\n\r\n\r\n\r\n\r\n{Delgosha}\r\n\r\n\r\nAn R package which aims to provide a collection of\r\nggplot2 themes for RTL languages (mostly Persian)\r\n\r\n\r\n\r\n\r\n\r\n\r\nTidyTuesday\r\n\r\n\r\nA #R4DS Weekly Challenge. I am a regular contributor and all of my visualization are created solely using ggplot() and other extension packages.\r\n\r\n\r\n\r\n\r\n\r\n\r\n{palmerpenguins}\r\n\r\n\r\nA python package for easily loading the Palmer penguins into your python environment\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-05-30T00:07:24+02:00"
+      "last_modified": "2021-05-30T13:30:27+02:00"
     }
   ],
   "collections": ["posts/posts.json", "talks/talks.json"]
