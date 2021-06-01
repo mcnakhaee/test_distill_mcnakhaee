@@ -58,5 +58,30 @@
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       <media:content url="https://mcnakhaee.com/posts/2020-05-04-persiansongs/persiansongs_files/figure-html5/unnamed-chunk-8-1.png" medium="image" type="image/png" width="3840" height="5760"/>
     </item>
+    <item>
+      <title>Analyzing the 2020 Democratic Presidential Debates - Part 2</title>
+      <dc:creator>Unknown</dc:creator>
+      <link>https://mcnakhaee.com/posts/2020-03-08-analyzing-the-2020-democratic-presidential-debates-part-2</link>
+      <description>A short description of the post.</description>
+      <guid>https://mcnakhaee.com/posts/2020-03-08-analyzing-the-2020-democratic-presidential-debates-part-2</guid>
+      <pubDate>Sun, 08 Mar 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://mcnakhaee.com/posts/2020-03-08-analyzing-the-2020-democratic-presidential-debates-part-2/analyzing-the-2020-democratic-presidential-debates-part-2_files/figure-html5/unnamed-chunk-20-1.png" medium="image" type="image/png" width="3840" height="3840"/>
+    </item>
+    <item>
+      <title>spoitfy_maps</title>
+      <dc:creator>Unknown</dc:creator>
+      <link>https://mcnakhaee.com/posts/2020-02-01-spoitfymaps</link>
+      <description>A short description of the post.</description>
+      <guid>https://mcnakhaee.com/posts/2020-02-01-spoitfymaps</guid>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Explainable Data Science Summer School</title>
+      <dc:creator>Unknown</dc:creator>
+      <link>https://mcnakhaee.com/posts/2019-12-31-explainable-data-science-summer-school</link>
+      <description>A short description of the post.</description>
+      <guid>https://mcnakhaee.com/posts/2019-12-31-explainable-data-science-summer-school</guid>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+    </item>
   </channel>
 </rss>
