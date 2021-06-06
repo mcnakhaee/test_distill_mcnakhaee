@@ -1,16 +1,22 @@
 ---
 title: "Covid-19 Trends in the Netherlands"
 description: |
-  A short description of the post.
+    Based on data published by RIVM in this post, I looked at how Covid-19 cases spread throughout the Netherlands.
 author:
-  - name: Unknown
+  - name: 'Muhammad Chenariyan Nakhaee'
     url: {}
 date: 05-22-2021
 categories:
   - R
+  - Data Visualizaion
+  - Covid-19
 preview: featured.JPG
 output:
   distill::distill_article:
+    highlight: rstudio
+    highlight_downlit: false
+    code_folding: true
+    toc: true
     self_contained: false
 ---
 
@@ -26,11 +32,7 @@ windowsFonts('Lobser' = 'Lobser')
 windowsFonts('Poppins Light' = 'Poppins Light')
 
 ```
-<aside>
-```{r codefolder, echo=FALSE, results='asis'}
-codefolder::distill(init = "hide")
-```
-</aside>
+
 Two weeks ago, I made [a visualization](https://www.linkedin.com/posts/muhammadcnakhaee_covid19-datavisualization-ggplot-activity-6726775611223764992-c_dk) that shows how Covid-19 cases spread in the Netherlands from the beginning of March and how grim the situation looks. However, someone pointed out to the fact that the number of tests has increased significantly. It means that my plot may exaggerate the Covid-19 situation in the Netherlands. Unfortunately, I could not find testing data for each Dutch municipality. Instead, I decided to use hospitalization admission and deceased cases to see if we can indeed see a massive spread in the second wave of Covid-19 cases in the Netherlands.
 
 ```{r,eval=FALSE}
@@ -40,8 +42,6 @@ library(sf)
 library(gganimate)
 library(santoku)
 library(lubridate)
-library(gghighlight)
-library(geofacet)
 library(foreign)
 theme_set(theme_void())
 theme_update(

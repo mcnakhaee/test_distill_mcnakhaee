@@ -1,13 +1,24 @@
 ---
 title: "Which Presidential Debate Was More Chaotic?"
 description: |
-  A short description of the post.
-author:
-  - name: Muhammad Chenariyan Nakhaee
-    url:  https://mcnakhaee.com
+  In this post, I looked at how Biden and Trump interrupted each other during the first Presidential debate and compared it with the recent Presidential debates.
 date: 10-15-2020
+author:
+  - name: 'Muhammad Chenariyan Nakhaee'
+    url: {}
+preview: featured.JPG
+categories:
+ - R
+ - NLP
+tags:
+ - R
+ - Visualization
 output:
   distill::distill_article:
+    highlight: rstudio
+    highlight_downlit: false
+    code_folding: true
+    toc: true
     self_contained: false
 ---
 

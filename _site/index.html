@@ -8,9 +8,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <style type="text/css">body {font-family: 'Roboto Slab', serif;}</style>
-
     <title>Muhammad Nakhaee</title>
 
     
@@ -662,12 +659,12 @@
           <!--         crossorigin="anonymous" -->
           <!--         async> -->
           <!-- </script> -->
-          <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id="></script>
+          <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-103723417-2"></script>
           <script type="text/javascript" cookie-consent="tracking">
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '');
+          gtag('config', 'UA-103723417-2');
           </script>
           <!--/radix_placeholder_site_in_header-->
           
@@ -758,8 +755,8 @@
           @import url('https://fonts.googleapis.com/css2?family=Alata');
 
           :root {
-            --font-body:   karla,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
-            --font-header: "LEMONMILKPro",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            --font-body:   Karla,'Karla',karla,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
+            --font-header: Karla,'Karla',"LEMONMILKPro",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
             --font-mono:   SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
 
             --color-background:   #EAE9EA;
@@ -800,9 +797,14 @@
           }
 
           :root {
-            --color-background:   white;
-            --color-primary:      #D40067;
-            --color-secondary:    #0079D1;
+            --color-background:   #fdf6e3;
+            --color-primary:      #e63946;
+            --color-secondary:    #328cc1;
+            --color-primary-dark: #DA2536;
+            --color-secondary:    #8a74a0;
+            --color-tertiary:     #a08a74;
+            --color-text:         #172a3a;
+            --color-white:        #FFFFFF;
           }
 
           html {
@@ -813,30 +815,36 @@
             --aside-size:      12px;
             --fig-cap-size:    13px;
             /*-- Main font colors --*/
-            --title-color:     #000000;
+            --title-color:     #666260;
             --header-color:    rgba(0, 0, 0, 0.8);
             --body-color:      rgba(0, 0, 0, 0.8);
             --aside-color:     rgba(0, 0, 0, 0.6);
             --fig-cap-color:   rgba(0, 0, 0, 0.6);
             /*-- Specify custom fonts ~~~ must be imported above   --*/
-            --heading-font:    'Alata', sans-serif;
+            --heading-font:    var(--font-header);
             --mono-font:       var(--font-mono);
-            --body-font:       'Karla', serif;
+            --body-font:       var(--font-body);
             --navbar-font:     var(--font-header);
           }
 
+
+          html body {
+              background-color: var(--color-background);
+          }
+
+
           /*-- ARTICLE METADATA --*/
           d-byline {
-            --heading-size:    0.6rem;
+            --heading-size:    1rem;
             --heading-color:   rgba(0, 0, 0, 0.5);
-            --body-size:       0.8rem;
+            --body-size:       1rem;
             --body-color:      rgba(0, 0, 0, 0.8);
           }
 
           /*-- ARTICLE TABLE OF CONTENTS --*/
           .d-contents {
-            --heading-size:    18px;
-            --contents-size:   13px;
+            --heading-size:    19px;
+            --contents-size:   17px;
           }
 
           /*-- ARTICLE APPENDIX --*/
@@ -851,29 +859,27 @@
           /* These properties only apply to Distill sites and blogs  */
 
           .distill-site-header {
-            --title-size:       18px;
-            --text-color:       black; /*rgba(255, 255, 255, 0.8);*/
-            --text-size:        18px;
-            --hover-color:      #D40067; /*white;*/
-            --bkgd-color:       white; /*#0F2E3D;*/
-          }
+            --title-size:       22px;
+            --text-color:       #f07167;
+            --text-size:        22px;
+            --hover-color:      var(--color-secondary);
+            --bkgd-color:       var(--color-background);
+             font-weight:        500;
+              text-transform: uppercase;
 
+          }
           .distill-site-footer {
-            --text-color:       /*rgba(255, 255, 255, 0.8);*/
+            --text-color:       #918f8d
             --text-size:        15px;
-            --hover-color:      #D40067;
-            --bkgd-color:       white; /*#0F2E3D;*/
+            --hover-color:      var(--color-white);
+            --bkgd-color:       var(--color-primary);
           }
 
           /*-- Additional custom styles --*/
           /* Add any additional CSS rules below */
 
-          .distill-site-header {
-            text-transform: uppercase;
-          }
-
-          h1, h2, h3 {
-            font-family: "LEMONMILKPro-Regular", sans-serif;
+          h1, h2, h3,h4,h5 {
+            font-family: Karla,'Karla',"LEMONMILKPro-Regular", sans-serif;
             text-transform: uppercase;
           }
 
@@ -897,13 +903,20 @@
              width: auto;
              margin-top: 18px;
           }
+          p {
+              --text-color:#666260;
+          }
 
+
+          .list-line {
+             --text-color: #f07167;
+          }
           /* styling for icon-link buttons (see distilltools::icon_link()) */
           .icon-link {
               background-color: transparent;
-              color: #D40067;
+              color: var(--color-primary);
               border: 1px solid;
-              border-color: #D40067;
+              border-color:var(--color-primary);
               padding: 5px .4rem 5px .4rem;
               /*margin: 4px;*/
               margin-top: 4px;
@@ -916,6 +929,30 @@
               background-color: #D40067;
               border-color: #D40067;
               color: white;
+          }
+
+
+          a {
+              color: var(--color-primary);
+              border-bottom: 0px;
+              text-decoration: none;
+          }
+
+          d-article a {
+              color: var(--color-primary);
+              border-bottom: 0px;
+              text-decoration: none;
+          }
+
+          d-article div.sourceCode pre { /* Chunk code */
+            border-radius: 5px; /* Rounded edges */
+            background-color: #fdf6e3;
+            color: black;
+            padding: 5px 5px 5px 18px;
+          }
+
+          d-article div.sourceCode {
+            background-color: #fdf6e3;
           }
 
           /*
@@ -1004,16 +1041,11 @@
               background-color: #D40067;
               border-color:#D40067;
               color: white;
-              font-family: "LEMONMILKPro-Light", sans-serif;
+              font-family: Karla,'Karla',"LEMONMILKPro-Light", sans-serif;
               border: none;
            }
 
-          /* gets rid of blue text decoration on homepage buttons when window is narrow
-          but doesn't seem to affect links throughout the rest of the site.
-          This might be a problem if I ever want links on homepage matching style of rest of site, but this hacky fix will do for now*/
-          a {
-            text-decoration: none!important;
-          }</style>
+          </style>
           <style type="text/css">
           /* base style */
 
@@ -1178,9 +1210,6 @@
           <header class="header header--fixed" role="banner">
           <nav class="distill-site-nav distill-site-header">
           <div class="nav-left">
-          <a class="logo" href="index.html">
-          <img src="images/logo.png" alt="Logo"/>
-          </a>
           <a href="index.html" class="title">Muhammad Nakhaee</a>
           <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
           </div>
@@ -1199,7 +1228,7 @@
           <a href="https://www.linkedin.com/in/muhammadcnakhaee/">
           <i class="fab fa-linkedin" aria-hidden="true"></i>
           </a>
-          <a href="https://instagram.com/m_cnakhaee">
+          <a href="https://instagram.com/mcnakhaee">
           <i class="fab fa-instagram" aria-hidden="true"></i>
           </a>
           <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
@@ -1210,113 +1239,91 @@
           <!--radix_placeholder_site_before_body-->
           <!--/radix_placeholder_site_before_body-->
     
-    <div class="container-fluid d-none d-lg-block d-xl-block">
-      <div class="d-flex row flex-row vh-100">
-        <div class="d-flex flex-column col-5 align-items-center text-center align-self-center">
-          <div class="mx-auto text-center">
-            <div class="p-3">
-              <img src=DSC_0326.jpg style="height:15rem" class="rounded">
+    <div class="container min-vh-100">
+      <div class="row min-vh-100 justify-content-center align-items-center">
+        <div class="col-12 text-center">
+          <img src=imgs/pic.jpg style="height:10rem" class="rounded-circle">
+          <div class="mt-3">
+            <h1>Muhammad Nakhaee</h1>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-6 mt-3 text-center d-none d-sm-block">
+              <div id="welcome-to-my-personal-site" class="section level3">
+              <h3>Welcome to my personal site!</h3>
+              <p>I am a data analyst working at a financial and business software company in the Netherlands. I specialize in using R and Python for data analysis, modeling, and data visualizations.</p>
+              </div>
             </div>
-            <div class="p-2">
-              <h1>Muhammad Nakhaee</h1>
-            </div>
-            <hr style="width:60%;"/>
-            <div class="p-2">
-              <div id="icon-list">
-                <ul class="list-inline">
-                                    <li class="list-inline-item">
-                    <a href=https://twitter.com/m_cnakhaee>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        Twitter
-                      </button>
-                    </a>
-                  </li>
-                                    <li class="list-inline-item">
-                    <a href=https://github.com/mcnakhaee>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        GitHub
-                      </button>
-                    </a>
-                  </li>
-                                    <li class="list-inline-item">
-                    <a href=https://www.linkedin.com/in/muhammadcnakhaee/>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        LinkedIn
-                      </button>
-                    </a>
-                  </li>
-                                    <li class="list-inline-item">
-                    <a href=mailto:mcnakhaee@gmail.com>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        Email
-                      </button>
-                    </a>
-                  </li>
-                                  </ul>
+            <div class="col-11 mt-3 text-center d-block d-sm-none">
+              <div id="welcome-to-my-personal-site" class="section level3">
+              <h3>Welcome to my personal site!</h3>
+              <p>I am a data analyst working at a financial and business software company in the Netherlands. I specialize in using R and Python for data analysis, modeling, and data visualizations.</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="d-flex flex-column vh-100 border-left"></div>
-        <div class="d-flex flex-column col px-5 align-items-center align-self-center mh-100" style="overflow-y: scroll;">
-          <div class="my-5" id="content">
-            <div id="hey-there" class="section level3">
-            <h3>Hey There!</h3>
-            <p>Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects on my Projects tab.</p>
-            <p><strong>Let’s collaborate!</strong><br />
-            Do you want to use one of my computational art pieces? Interested in having me talk at your organization or group? Do you have an idea that doesn’t fit the previous questions? Email me!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="container-flex min-vh-100 d-block d-lg-none d-xl-none">
-      <div class="d-flex flex-row justify-content-center">
-        <div class="d-flex flex-col">
-          <div class="mx-auto">
-            <div class="p-3 mt-3 text-center">
-              <img src=DSC_0326.jpg style="height:15rem" class="rounded">
-            </div>
-            <div class="p-2 text-center">
-              <h1>Muhammad Nakhaee</h1>
-            </div>
-            <hr style="width:60%;"/>
+          <hr style="width:60%;"/>
 
-            <div class="row justify-content-center align-items-center">
-              <div class="col-8 p-1 text-center">
-                <div class="list-group">
-                                    <a href=https://twitter.com/m_cnakhaee>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-8 text-center d-none d-sm-block">
+              <ul class="list-inline">
+                                <li class="list-inline-item">
+                  <a href=https://twitter.com/m_cnakhaee>
+                    <button type="button" class="btn btn-outline-dark mb-2">
                       Twitter
                     </button>
                   </a>
-                                    <a href=https://github.com/mcnakhaee>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                </li>
+                                <li class="list-inline-item">
+                  <a href=https://github.com/mcnakhaee>
+                    <button type="button" class="btn btn-outline-dark mb-2">
                       GitHub
                     </button>
                   </a>
-                                    <a href=https://www.linkedin.com/in/muhammadcnakhaee/>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                </li>
+                                <li class="list-inline-item">
+                  <a href=https://www.linkedin.com/in/muhammadcnakhaee/>
+                    <button type="button" class="btn btn-outline-dark mb-2">
                       LinkedIn
                     </button>
                   </a>
-                                    <a href=mailto:mcnakhaee@gmail.com>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                </li>
+                                <li class="list-inline-item">
+                  <a href=mailto:mcnakhaee@gmail.com>
+                    <button type="button" class="btn btn-outline-dark mb-2">
                       Email
                     </button>
                   </a>
-                                  </div>
-              </div>
+                </li>
+                              </ul>
             </div>
-            <div class="p pt-4 px-5">
-              <div id="hey-there" class="section level3">
-              <h3>Hey There!</h3>
-              <p>Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects on my Projects tab.</p>
-              <p><strong>Let’s collaborate!</strong><br />
-              Do you want to use one of my computational art pieces? Interested in having me talk at your organization or group? Do you have an idea that doesn’t fit the previous questions? Email me!</p>
-              </div>
+          </div>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-8 m-1 text-center d-block d-sm-none">
+              <div class="list-group">
+                                <a href=https://twitter.com/m_cnakhaee>
+                  <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    Twitter
+                  </button>
+                </a>
+                                <a href=https://github.com/mcnakhaee>
+                  <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    GitHub
+                  </button>
+                </a>
+                                <a href=https://www.linkedin.com/in/muhammadcnakhaee/>
+                  <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    LinkedIn
+                  </button>
+                </a>
+                                <a href=mailto:mcnakhaee@gmail.com>
+                  <button type="button" class="list-group-item list-group-item-action my-1 rounded">
+                    Email
+                  </button>
+                </a>
+                              </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1327,10 +1334,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-      <!--radix_placeholder_site_after_body-->
-      <!--/radix_placeholder_site_after_body-->
-      <!--radix_placeholder_navigation_after_body-->
-      <!--/radix_placeholder_navigation_after_body-->
-  
+          <!--radix_placeholder_site_after_body-->
+          <!--/radix_placeholder_site_after_body-->
+          <!--radix_placeholder_navigation_after_body-->
+          <!--/radix_placeholder_navigation_after_body-->
+    
   </body>
 </html>

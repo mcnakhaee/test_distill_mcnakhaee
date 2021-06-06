@@ -53,35 +53,32 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #d40067; } /* Alert */
-code span.an { color: #5e5e5e; } /* Annotation */
+code span.al { color: #ff0000; } /* Alert */
+code span.an { color: #008000; } /* Annotation */
 code span.at { } /* Attribute */
-code span.bn { color: #d40067; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #6600d4; } /* ControlFlow */
-code span.ch { color: #008747; } /* Char */
-code span.cn { color: #c15500; } /* Constant */
-code span.co { color: #5e5e5e; } /* Comment */
-code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-code span.dt { color: #d40067; } /* DataType */
-code span.dv { color: #d40067; } /* DecVal */
-code span.er { color: #d40067; } /* Error */
+code span.cf { color: #0000ff; } /* ControlFlow */
+code span.ch { color: #008080; } /* Char */
+code span.cn { color: #585cf6; } /* Constant */
+code span.co { color: #4c886b; } /* Comment */
+code span.cv { color: #008000; } /* CommentVar */
+code span.do { color: #008000; } /* Documentation */
+code span.dv { color: #0000cd; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #d40067; } /* Float */
-code span.fu { color: #0077ce; } /* Function */
+code span.fl { color: #0000cd; } /* Float */
 code span.im { } /* Import */
-code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #6600d4; } /* Keyword */
-code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #6600d4; } /* Other */
-code span.pp { color: #d40067; } /* Preprocessor */
-code span.sc { color: #5e5e5e; } /* SpecialChar */
-code span.ss { color: #008747; } /* SpecialString */
-code span.st { color: #008747; } /* String */
-code span.va { color: #111111; } /* Variable */
-code span.vs { color: #008747; } /* VerbatimString */
-code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+code span.in { color: #008000; } /* Information */
+code span.kw { color: #0000ff; } /* Keyword */
+code span.op { color: #687687; } /* Operator */
+code span.ot { color: #ff4000; } /* Other */
+code span.pp { color: #ff4000; } /* Preprocessor */
+code span.sc { color: #008080; } /* SpecialChar */
+code span.ss { color: #008080; } /* SpecialString */
+code span.st { color: #036a07; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #008080; } /* VerbatimString */
+code span.wa { color: #008000; font-weight: bold; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
@@ -2114,8 +2111,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   @import url('https://fonts.googleapis.com/css2?family=Alata');
 
   :root {
-    --font-body:   karla,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
-    --font-header: "LEMONMILKPro",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-body:   Karla,'Karla',karla,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
+    --font-header: Karla,'Karla',"LEMONMILKPro",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
     --font-mono:   SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
 
     --color-background:   #EAE9EA;
@@ -2156,9 +2153,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   :root {
-    --color-background:   white;
-    --color-primary:      #D40067;
-    --color-secondary:    #0079D1;
+    --color-background:   #fdf6e3;
+    --color-primary:      #e63946;
+    --color-secondary:    #328cc1;
+    --color-primary-dark: #DA2536;
+    --color-secondary:    #8a74a0;
+    --color-tertiary:     #a08a74;
+    --color-text:         #172a3a;
+    --color-white:        #FFFFFF;
   }
 
   html {
@@ -2169,30 +2171,36 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --aside-size:      12px;
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
-    --title-color:     #000000;
+    --title-color:     #666260;
     --header-color:    rgba(0, 0, 0, 0.8);
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.6);
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    'Alata', sans-serif;
+    --heading-font:    var(--font-header);
     --mono-font:       var(--font-mono);
-    --body-font:       'Karla', serif;
+    --body-font:       var(--font-body);
     --navbar-font:     var(--font-header);
   }
 
+
+  html body {
+      background-color: var(--color-background);
+  }
+
+
   /*-- ARTICLE METADATA --*/
   d-byline {
-    --heading-size:    0.6rem;
+    --heading-size:    1rem;
     --heading-color:   rgba(0, 0, 0, 0.5);
-    --body-size:       0.8rem;
+    --body-size:       1rem;
     --body-color:      rgba(0, 0, 0, 0.8);
   }
 
   /*-- ARTICLE TABLE OF CONTENTS --*/
   .d-contents {
-    --heading-size:    18px;
-    --contents-size:   13px;
+    --heading-size:    19px;
+    --contents-size:   17px;
   }
 
   /*-- ARTICLE APPENDIX --*/
@@ -2207,29 +2215,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* These properties only apply to Distill sites and blogs  */
 
   .distill-site-header {
-    --title-size:       18px;
-    --text-color:       black; /*rgba(255, 255, 255, 0.8);*/
-    --text-size:        18px;
-    --hover-color:      #D40067; /*white;*/
-    --bkgd-color:       white; /*#0F2E3D;*/
-  }
+    --title-size:       22px;
+    --text-color:       #f07167;
+    --text-size:        22px;
+    --hover-color:      var(--color-secondary);
+    --bkgd-color:       var(--color-background);
+     font-weight:        500;
+      text-transform: uppercase;
 
+  }
   .distill-site-footer {
-    --text-color:       /*rgba(255, 255, 255, 0.8);*/
+    --text-color:       #918f8d
     --text-size:        15px;
-    --hover-color:      #D40067;
-    --bkgd-color:       white; /*#0F2E3D;*/
+    --hover-color:      var(--color-white);
+    --bkgd-color:       var(--color-primary);
   }
 
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below */
 
-  .distill-site-header {
-    text-transform: uppercase;
-  }
-
-  h1, h2, h3 {
-    font-family: "LEMONMILKPro-Regular", sans-serif;
+  h1, h2, h3,h4,h5 {
+    font-family: Karla,'Karla',"LEMONMILKPro-Regular", sans-serif;
     text-transform: uppercase;
   }
 
@@ -2253,13 +2259,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
      width: auto;
      margin-top: 18px;
   }
+  p {
+      --text-color:#666260;
+  }
 
+
+  .list-line {
+     --text-color: #f07167;
+  }
   /* styling for icon-link buttons (see distilltools::icon_link()) */
   .icon-link {
       background-color: transparent;
-      color: #D40067;
+      color: var(--color-primary);
       border: 1px solid;
-      border-color: #D40067;
+      border-color:var(--color-primary);
       padding: 5px .4rem 5px .4rem;
       /*margin: 4px;*/
       margin-top: 4px;
@@ -2272,6 +2285,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       background-color: #D40067;
       border-color: #D40067;
       color: white;
+  }
+
+
+  a {
+      color: var(--color-primary);
+      border-bottom: 0px;
+      text-decoration: none;
+  }
+
+  d-article a {
+      color: var(--color-primary);
+      border-bottom: 0px;
+      text-decoration: none;
+  }
+
+  d-article div.sourceCode pre { /* Chunk code */
+    border-radius: 5px; /* Rounded edges */
+    background-color: #fdf6e3;
+    color: black;
+    padding: 5px 5px 5px 18px;
+  }
+
+  d-article div.sourceCode {
+    background-color: #fdf6e3;
   }
 
   /*
@@ -2360,16 +2397,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       background-color: #D40067;
       border-color:#D40067;
       color: white;
-      font-family: "LEMONMILKPro-Light", sans-serif;
+      font-family: Karla,'Karla',"LEMONMILKPro-Light", sans-serif;
       border: none;
    }
 
-  /* gets rid of blue text decoration on homepage buttons when window is narrow
-  but doesn't seem to affect links throughout the rest of the site.
-  This might be a problem if I ever want links on homepage matching style of rest of site, but this hacky fix will do for now*/
-  a {
-    text-decoration: none!important;
-  }</style>
+  </style>
   <style type="text/css">
   /* base style */
 
@@ -2574,12 +2606,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--         crossorigin="anonymous" -->
   <!--         async> -->
   <!-- </script> -->
-  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-103723417-2"></script>
   <script type="text/javascript" cookie-consent="tracking">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', '');
+  gtag('config', 'UA-103723417-2');
   </script>
   <!--/radix_placeholder_site_in_header-->
 
@@ -2599,9 +2631,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a class="logo" href="index.html">
-<img src="images/logo.png" alt="Logo"/>
-</a>
 <a href="index.html" class="title">Muhammad Nakhaee</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
@@ -2620,7 +2649,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="https://www.linkedin.com/in/muhammadcnakhaee/">
 <i class="fab fa-linkedin" aria-hidden="true"></i>
 </a>
-<a href="https://instagram.com/m_cnakhaee">
+<a href="https://instagram.com/mcnakhaee">
 <i class="fab fa-instagram" aria-hidden="true"></i>
 </a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>

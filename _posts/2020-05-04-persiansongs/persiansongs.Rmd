@@ -1,13 +1,24 @@
 ---
 title: "The Happiest, Saddest, Most Energetic and Most Popular Persian Singers on Spotify"
 description: |
-  A short description of the post.
-author:
-  - name: Unknown
-    url: {}
+  I investigate the difference between audio features of Iranian songs and singers on Spotify. 
 date: 05-04-2020
+author:
+  - name: 'Muhammad Chenariyan Nakhaee'
+    url: {}
+preview: featured.JPG
+categories:
+ - R
+ - Visualization
+tags:
+ - R
+ - Visualization
 output:
   distill::distill_article:
+    highlight: rstudio
+    highlight_downlit: false
+    code_folding: true
+    toc: true
     self_contained: false
 ---
 
@@ -44,13 +55,19 @@ library(ggtext)
 I compiled a list of Persian Singers manually and collected information about their available songs on Spotify using the ``spotifyr`` package in R which lets us use R to access the Spotify's API. This process was cumbersome as sometimes I was not getting what I was looking for. For instance, sometimes, songs that belonged to another random artist were retrieved. For each singer, we can only retrieve the top 10 popular songs. It means that the rest of the songs have no popularity scores. In the end, I collected various kinds of information about more than 10000 songs.
 
 
-```{r message=FALSE, warning=FALSE}
-songs_audio_plus_pop <- read_csv('https://raw.githubusercontent.com/mcnakhaee/datasets/master/Persian_Songs_Spotify.csv')
+```{r message=FALSE, warning=FALSE,}
+songs_audio_plus_pop <- read_csv('https://raw.githubusercontent.com/mcnakhaee/datasets/master/Persian_Songs_Spotify.csv',
+                                  )
 
-head(songs_audio_plus_pop) %>% 
+glimpse(songs_audio_plus_pop) 
+```
+
+```{r eval=FALSE, include=FALSE, layout="l-screen-inset"}
+songs_audio_plus_pop %>% 
   kable() %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 ```
+
 
 ### Overall Song Features
 
@@ -203,7 +220,6 @@ ggplot() +
 ```
 
 
-
 ### Looking more closely at each audio feature
 
 My first plot is informative, but it only gives us an overall picture of audio features. However, I would like to have a more detailed picture of singers and the audio features for each of their songs.  For this reason, I  will also make a separate plot for each audio feature where every song and its corresponding feature values are shown.  I will also mark a few popular songs from each artist with a different color on this plot.
@@ -260,7 +276,7 @@ songs_audio_plus_pop_jitter <- songs_audio_plus_pop %>%
   mutate(is_popular_size = if_else(!is.na(popularity),popularity,25),
          is_popular_alpha = if_else(!is.na(popularity),0.8,0.5)) %>% 
   mutate(track_name= str_wrap(track_name, width = 15)) %>% 
-  mutate(popular_track_name = if_else(!is.na(track_name_farsi)& !is.na(popularity) & nchar(track_name) < 20 & !explicit,track_name,'')) 
+  mutate(popular_track_name = if_else( !is.na(popularity) & nchar(track_name) < 20 & !explicit,track_name,'')) 
 ```
 
 ### Happiness
@@ -576,16 +592,8 @@ This plot shows the most popular song and the least popular track of each artist
 
 ```{r eval=FALSE, fig.height=20, fig.width=20, message=FALSE, warning=TRUE, include=FALSE}
 
-songs_audio_plus_pop <- songs_audio_plus_pop %>%
-    mutate(
-    track_name_farsi_na = if_else(
-      is.na(track_name_farsi),
-      track_name,
-      ''
-    ))
 popular_songs <- songs_audio_plus_pop %>%
   filter(!(is.na(popularity))) %>% 
-  filter(!(is.na(track_name_farsi))) %>% 
   group_by(artist_name) %>% 
   arrange(desc(popularity)) %>% 
   slice(1)
@@ -605,15 +613,10 @@ df <- most %>%
   bind_rows(popular_songs %>% mutate(energy = energy + 0.02)) %>%
   bind_rows(least) %>%
   mutate(
-    is_popular = !is.na(popularity),
-    track_name_farsi_no_na = if_else(
-      is.na(track_name_farsi),
-      '',
-      paste('-' , track_name_farsi, sep = '')
-    )
+    is_popular = !is.na(popularity)
   ) %>%
   arrange(energy) %>%
-  distinct(artist_name_farsi, track_name_farsi, .keep_all = TRUE)
+  distinct(artist_name, track_name, .keep_all = TRUE)
 
 df$id <- c(1:nrow(df))
 
@@ -626,8 +629,7 @@ df <- df %>%
   mutate(angle = if_else(angle < 180, angle, angle + 180)) %>%
   mutate(
     angle = if_else(angle < 180 &
-                      angle > 97, angle + 180, angle),
-    label = paste(artist_name_farsi, track_name_farsi, sep = ' - ')
+                      angle > 97, angle + 180, angle)
   )
 
 df %>%

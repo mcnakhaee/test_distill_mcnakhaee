@@ -2,12 +2,20 @@
 title: "Explainable Data Science Summer School"
 description: |
   A short description of the post.
-author:
-  - name: Unknown
-    url: {}
 date: 12-31-2019
+author:
+  - name: 'Muhammad Chenariyan Nakhaee'
+    url: {}
+categories:
+ - XAI
+  - Data Science
+tags:
+ - XAI
+ - Data Science
 output:
   distill::distill_article:
+    code_folding: true
+    toc: true
     self_contained: false
 ---
 

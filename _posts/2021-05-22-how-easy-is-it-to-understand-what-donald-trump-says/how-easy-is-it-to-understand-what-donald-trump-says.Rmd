@@ -1,14 +1,18 @@
 ---
 title: "How Easy Is It to Understand What Donald Trump Says?"
 description: |
-  A short description of the post.
+    The computational complexity of the language that Trump uses in his speeches
 author:
-  - name: Unknown
+  - name: 'Muhammad Chenariyan Nakhaee'
     url: {}
-date: 05-22-2021
+date: 11-03-2020
 preview: featured.JPG
 output:
   distill::distill_article:
+    highlight: rstudio
+    highlight_downlit: false
+    code_folding: true
+    toc: true
     self_contained: false
 ---
 

@@ -1,13 +1,22 @@
 ---
-title: "spoitfy_maps"
+title: "The Map of Spotify Songs"
 description: |
-  A short description of the post.
+  Mapping high dimensional audio features from Spotify's into a 2D space using UMPAN and TSNE algorithms.
+date: 2020-02-01
 author:
-  - name: Unknown
+  - name: 'Muhammad Chenariyan Nakhaee'
     url: {}
-date: 02-01-2020
+preview: featured.JPG
+categories:
+ - R
+ - Machine Learning
+ - Dimensionaliy Reduction
 output:
   distill::distill_article:
+    highlight: rstudio
+    highlight_downlit: false
+    code_folding: true
+    toc: true
     self_contained: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Muhammad Nakhaee"
-image: "DSC_0326.jpg"
+image: "imgs/pic.jpg"
 links:
   - label: Twitter
     url: "https://twitter.com/m_cnakhaee"
@@ -12,7 +12,7 @@ links:
     url: "mailto:mcnakhaee@gmail.com"
 site: distill::distill_website
 output:
-  postcards::trestles
+  postcards::jolla
 ---
 
 ```{r setup, include=FALSE}
@@ -23,10 +23,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-### Hey There!
+### Welcome to my personal site!
 
-Welcome to my personal site! I am a data analyst working in healthcare research. I specialize in using R and SAS for data analysis, epidemiological research, and data visualizations. I am also passionate about computational art, knowledge sharing / dissemination, and how to mix the two. Check out my most recent projects on my Projects tab.
-
-
-**Let's collaborate!**  
-Do you want to use one of my computational art pieces? Interested in having me talk at your organization or group? Do you have an idea that doesn't fit the previous questions? Email me!
+ I am a data analyst working at a financial and business software company in the Netherlands. I specialize in using R and Python for data analysis, modeling, and data visualizations. 

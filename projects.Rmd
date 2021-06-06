@@ -32,13 +32,6 @@ ggplot2 themes for RTL languages (mostly Persian)",
   text2 = NULL
 )
 
-create_proj_card(
-  img_src = "imgs/palmer.png",
-  url = "https://github.com/mcnakhaee/palmerpenguins",
-  title = "TidyTuesday",
-  text = "A #R4DS Weekly Challenge. I am a regular contributor and all of my visualization are created solely using ggplot() and other extension packages.",
-  text2 = NULL
-)
 
 create_proj_card(
   img_src = "imgs/palmer.png",
